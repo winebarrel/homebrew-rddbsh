@@ -1,19 +1,19 @@
 class Rddbsh < Formula
   desc "A SQL-like interactive CLI for Amazon DynamoDB (Rust port of awslabs/dynamodb-shell)"
   homepage "https://github.com/winebarrel/rddbsh"
-  version "0.12.1+1"
+  version "0.12.1+2"
   if OS.mac? && Hardware::CPU.arm?
-    url "https://github.com/winebarrel/rddbsh/releases/download/v0.12.1+1/rddbsh-aarch64-apple-darwin.tar.xz"
-    sha256 "2cfc585b4b0b1fd2cba5ff4bb0ff8bb5d2618e587d2af7d6e676fedc5469fb47"
+    url "https://github.com/winebarrel/rddbsh/releases/download/v0.12.1+2/rddbsh-aarch64-apple-darwin.tar.xz"
+    sha256 "fff9a1a411cf15969c21f228738590056e34e10c86523d5fbd1711e7a0ac8e20"
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/winebarrel/rddbsh/releases/download/v0.12.1+1/rddbsh-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "3ed748c33b1f3d4931d11ac8f3507becae1118bc306703715c085bdbbdf853f8"
+      url "https://github.com/winebarrel/rddbsh/releases/download/v0.12.1+2/rddbsh-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "2bdb648928c5091ca580e96f02368a6c5358d04cd0df83ee8cd211c76a6baa32"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/winebarrel/rddbsh/releases/download/v0.12.1+1/rddbsh-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "4a65ad8dc0ea60dde42ecd4690e75f0828c786a6bd782785ae684448e0949d8e"
+      url "https://github.com/winebarrel/rddbsh/releases/download/v0.12.1+2/rddbsh-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "ae151d29c5f2d9eb0e0a3efa54e58ebcda14b2e3c987ecf4654bf3d97f078136"
     end
   end
   license "Apache-2.0"
